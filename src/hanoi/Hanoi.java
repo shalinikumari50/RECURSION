@@ -44,4 +44,11 @@ public class Hanoi {
     public void setTo(char to) {
         this.to = to;
     }
+
+    public void move(char from, char to) {
+        String a = String.format("Move disk from %c to %c!", from, to);
+        System.out.println(a);
+    }
+
+
 }
