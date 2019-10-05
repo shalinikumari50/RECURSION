@@ -50,5 +50,13 @@ public class Hanoi {
         System.out.println(a);
     }
 
+    public void hanoi(int numberOfDisks, char from, char helper, char to) {
+        if (numberOfDisks == 0) {
+        } else {
+            hanoi(numberOfDisks - 1, from, to, helper);
+            move(from, to);
+            hanoi(numberOfDisks - 1, helper, from, to);
+        }
+    }
 
 }
