@@ -10,6 +10,13 @@ public class Hanoi {
         return numberOfDisks;
     }
 
+    public Hanoi(int numberOfDisks, char from, char helper, char to) {
+        this.numberOfDisks = numberOfDisks;
+        this.helper = helper;
+        this.from = from;
+        this.to = to;
+    }
+
     public void setNumberOfDisks(int numberOfDisks) {
         this.numberOfDisks = numberOfDisks;
     }
