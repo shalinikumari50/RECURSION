@@ -9,6 +9,7 @@ public class Main {
         char from = scanner.next().charAt(0);
         char helper = scanner.next().charAt(0);
         char to = scanner.next().charAt(0);
+        Hanoi hanoi = new Hanoi(numberOfDisks, from, helper, to);
         scanner.close();
     }
 }
